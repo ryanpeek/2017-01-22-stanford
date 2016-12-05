@@ -1,24 +1,24 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # use YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "FIXME"      # contact email address for workshop organizer, such as "grace@hopper.org"
+venue: "Stanford University School of Medicine"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Li Ka Shing Center for Learning and Knowledge Room LK120, 291 Campus Drive, Stanford, California, 94305"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: "us"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "37.432019, -122.175804"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "Jan 21-22, 2017"    # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 4:30 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: 2017-01-21      # use YYYY-MM-DD format like 2015-01-01
+enddate: 2017-01-22        # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Ryan Peek, Catalina Anghel, Amy Hodge"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["TBA"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "mcyert@stanford.edu"      # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
-day1_am: "Data organization in spreadsheets and OpenRefine"
-day1_pm: "Introduction to R"
-day2_am: "Data analysis and visualization in R"
-day2_pm: "SQL for data management"
+day1_am: "Introduction to the workshop, data, and data tidy-ness (<i>Catalina</i>)"
+day1_pm: "Cloud computing for genomics (<i>Ryan</i>) & Intro to command line (<i>Amy</i>)"
+day2_am: "Data wrangling and processing (<i>Catalina</i>)"
+day2_pm: "Data analysis and visualization in R (<i>Ryan</i>)"
 ---
 <!--
   HEADER
@@ -46,6 +46,42 @@ day2_pm: "SQL for data management"
 </iframe>
 {% endif %}
 
+<p>
+<strong>This workshop is brought to you by:</strong>
+</p>
+
+<p>
+<a href="http://med.stanford.edu/">
+    <img border="0" alt="StanfordMed" src="img/SM-logo-monument.svg" height="150">
+</a>
+</p>
+
+<p>
+<a href="http://www.datacarpentry.org/">
+    <img border="0" alt="DC" src="img/DC6_logo.png" height="150">
+</a>
+</p>
+
+
+<!--
+<p>
+<strong>Sponsors:</strong>
+</p>
+NIH
+<p>
+<a href="http://www.agtagenomics.org.au/">
+    <img border="0" alt="AGTA" src="https://combineau.files.wordpress.com/2015/05/agta-logo.jpg" height="100">
+</a>
+
+&nbsp;
+&nbsp;
+
+<a href="http://www.vlsci.org.au/">
+    <img border="0" alt="VLSCI" src="https://combineau.files.wordpress.com/2015/05/logo_vlsci_rgb.jpg" height="100">
+</a>
+</p>
+-->
+
 <h2>General Information</h2>
 
 <!--
@@ -55,13 +91,13 @@ day2_pm: "SQL for data management"
   the pitch.
 -->
 <p>
-<a href=http://datacarpentry.org>Data Carpentry</a> workshops are for any researcher 
-who has data they want to analyze, and no prior computational experience is required. 
-This hands-on workshop teaches basic concepts, skills and tools for working more 
-effectively with data. 
+<a href=http://datacarpentry.org>Data Carpentry</a> workshops are for any researcher
+who has data they want to analyze, and no prior computational experience is required.
+This hands-on workshop teaches basic concepts, skills and tools for working more
+effectively with data.
 </p>
 <p>
-We will cover {{page.day1_am}}, {{page.day1_pm}}, {{page.day2_am}} and {{page.day2_pm}}.
+This is the <strong>Data Carpentry Genomics Workshop</strong> <a href=http://www.datacarpentry.org/genomics-workshop/>(overview page)</a>. The focus of this workshop is on working with genomics data and data management and analysis for genomics research. It covers metadata organization in spreadsheets, data organization, connecting to and using cloud computing, the command line for sequence quality control and bioinformatics workflows, and R for data analysis and visualization. The workshop does not teach any particular bioinformatics tools, but the foundational skills that will allow you to conduct any analysis and analyze the output of a genomics pipeline.
 
 Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
 </p>
@@ -102,7 +138,7 @@ Participants should bring their laptops and plan to participate actively. By the
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants must bring a laptop with a 
+  <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
   on. They should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
@@ -152,18 +188,20 @@ Participants should bring their laptops and plan to participate actively. By the
 
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
-       <tr> <td>Afternoon</td>  <td>{{page.day1_pm}}</td> </tr>
+      <tr> <td>8:00 am - 8:30 am</td>  <td>Coffee and Sign In</td> <td></td> </tr>
+      <tr> <td>8:30 am - 12:00 pm</td>  <td>{{page.day1_am}}</td>  <td><a href="http://www.datacarpentry.org/introduction-genomics/" target="_blank">Module 1: Intro to Data </a>, <a href="https://jasonjwilliamsny.github.io/tidiness-genomics/" target="_blank">Module 2: Data Tidiness</a>, <a href="https://jasonjwilliamsny.github.io/cloud-genomics/" target="_blank">Module 3: Cloud Computing</a></td> </tr>
+       <tr> <td>1:00 pm - 4:30 pm</td>  <td>{{page.day1_pm}}</td> <td><a href="http://www.datacarpentry.org/shell-genomics/lessons/" target="_blank">Module 4: Intro to Command Line</a>, <a href="https://github.com/datacarpentry/organization-genomics/blob/gh-pages/lessons/01_intro_organization.md" target="_blank">Module 5: Project Setup</a>, <a href="https://github.com/JasonJWilliamsNY/wrangling-genomics/blob/gh-pages/lessons/00-readQC.md" target="_blank">QC of Sequence Data</a></td> </tr>
     </table>
- 
- 
+
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day2_am}}</td> </tr>
-      <tr> <td>Afternoon</td>  <td>{{page.day2_pm}}</td> </tr>
+      <tr> <td>8:00 am - 8:30 am</td>  <td>Coffee and Sign In</td> <td></td> </tr>
+      <tr> <td>8:30 am - 12:00 pm</td>  <td>{{page.day2_am}}</td> <td><a href="https://github.com/JasonJWilliamsNY/wrangling-genomics/blob/gh-pages/lessons/01-automating_a_workflow.md" target="_blank">Module 5: Workflows</a>, <a href="https://github.com/JasonJWilliamsNY/wrangling-genomics/blob/gh-pages/lessons/02-variant-calling-workflow.md" target="_blank"> Module 5: Variant Calling</a></td> </tr>
+        <tr> <td>1:00 pm - 4:30 pm</td>  <td>{{page.day2_pm}}</td> <td><a href="http://www.datacarpentry.org/R-genomics/" target="_blank">R: Lessons 00-05</a></td> </tr>
     </table>
  </div>
 </div>
+
 
 <!--
   ETHERPAD
@@ -203,11 +241,22 @@ Participants should bring their laptops and plan to participate actively. By the
   This is one of the places where people frequently make mistakes, so
   please preview your site before committing, and make sure to run
   'tools/check' as well.
--->
-<!--
+
 <h2>Syllabus</h2>
 
 <div class="row">
+  <div class="col-md-6">
+    <h3>The Workshop</h3>
+    <ul>
+      <li>Files and directories</li>
+      <li>History and tab completion</li>
+      <li>Pipes and redirection</li>
+      <li>Looping over files</li>
+      <li>Creating and running shell scripts</li>
+      <li>Finding things</li>
+      <li><a href="{{site.R-genomics}}/ref/00-before-we-start.html">Reference...</a></li>
+    </ul>
+  </div>
   <div class="col-md-6">
     <h3>The Unix Shell</h3>
     <ul>
@@ -220,6 +269,7 @@ Participants should bring their laptops and plan to participate actively. By the
       <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
     </ul>
   </div>
+
   <div class="col-md-6">
     <h3>Programming in Python</h3>
     <ul>
@@ -235,51 +285,19 @@ Participants should bring their laptops and plan to participate actively. By the
   </div>
 
   <div class="col-md-6">
-    <h3>Programming in R</h3>
+    <h3>Data Analysis and Visualization in R</h3>
     <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
+      <li>Before we start</li>
+      <li>Intro to R</li>
+      <li>Starting with data</li>
+      <li>Data Frames</li>
+      <li>dplyr</li>
+      <li>Data visualization</li>
+      <li><a href="{{site.swc_lessons}}/ref/00-before-we-start.html">Reference...</a></li>
     </ul>
   </div>
 
 </div>
-
-<div class="row">
-  <div class="col-md-6">
-    <h3>Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3>Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
-    </ul>
-  </div>
-</div>
-
-
 <hr/>
 -->
 
@@ -298,10 +316,10 @@ Participants should bring their laptops and plan to participate actively. By the
 <h2 id="setup">Setup</h2>
 
 <p>
-To participate in a Data Carpentry workshop, you will need working copies of the 
-described software. Please make sure to install everything (or at least to download 
-the installers) before the start of your workshop. Participants should bring and use 
-their own laptops to insure the proper setup of tools for an efficient workflow 
+To participate in a Data Carpentry workshop, you will need working copies of the
+described software. Please make sure to install everything (or at least to download
+the installers) before the start of your workshop. Participants should bring and use
+their own laptops to insure the proper setup of tools for an efficient workflow
 once you leave the workshop.
 <p>
 Please follow these <a href=install.html>Setup Instructions</a>.
@@ -311,4 +329,3 @@ Please follow these <a href=install.html>Setup Instructions</a>.
   that may be useful on the
   <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
