@@ -7,16 +7,16 @@ country: "United-States"      # country (lowercase two-letter ISO code such as "
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "37.432019, -122.175804"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
 humandate: "Jan 21-22, 2017"    # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "9:00 am - 4:30 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
+humantime: "8:00 am - 5:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-01-21      # use YYYY-MM-DD format like 2015-01-01
 enddate: 2017-01-22        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["Ryan Peek, Catalina Anghel, Amy Hodge"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Chris Beitel"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "mcyert@stanford.edu"      # contact email address for workshop organizer, such as "grace@hopper.org"
+instructor: ["Ryan Peek", "Catalina Anghel"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Amy Hodge","Chris Beitel", "Nikhil Damle", "Chris Mark DeBoever", "Joe Reese Davis III", "Matt George Durrant", "Lorraine Ling", "Aparna Rajiv Rajpurkar", "Genevieve L Wojcik", "Zach Zappala"]
+contact: "ljsteele@stanford.edu"      # contact email address for workshop organizer,
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
-eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
+eventbrite: "30193774392"      # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 day1_am: "Introduction to the workshop, data, and data tidy-ness (<i>Catalina</i>)"
-day1_pm: "Cloud computing for genomics (<i>Ryan</i>) & Intro to command line (<i>Amy</i>)"
+day1_pm: "Cloud computing for genomics (<i>Ryan</i>) & Intro to command line (<i>Catalina</i>)"
 day2_am: "Data wrangling and processing (<i>Catalina</i>)"
 day2_pm: "Data analysis and visualization in R (<i>Ryan</i>)"
 ---
@@ -36,6 +36,13 @@ day2_pm: "Data analysis and visualization in R (<i>Ryan</i>)"
   are not using Eventbrite, or leave it in, since it will not be
   displayed if the 'eventbrite' field in the header is not set.
 -->
+
+<h2>Registration</h2>
+
+<strong>Register by January 10:</strong>
+
+https://www.eventbrite.com/e/stanford-university-data-carpentry-workshop-tickets-30193774392
+
 {% if page.eventbrite %}
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
@@ -110,7 +117,7 @@ Participants should bring their laptops and plan to participate actively. By the
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is for Stanford graduate students only. This offering of Data Carpentry can be taken for academic credit
 </p>
 
 <!--
